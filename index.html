@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+      body {
+        background: #222222;
+        color: #eeeeee;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+      }
+
+      header {
+        margin-bottom: 4rem;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      article {
+        width: clamp(150px, 20%, 200px);
+        padding: 2rem;
+        border-radius: 1rem;
+        transition: all 100ms ease-in-out;
+      }
+
+      article:hover {
+        background: #333333;
+        text-shadow: 0 0 1px #fafafa;
+      }
+
+      article a {
+        text-decoration: none;
+        color: #eeeeee;
+      }
+
+      article a img {
+        width: 100%;
+      }
+      article:not(:last-child) a img {
+        filter: invert(1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome Home Bud</h1>
+    </header>
+    <main>
+      <article>
+        <a href="https://www.twitter.com">
+          <img src="https://image.flaticon.com/icons/png/512/23/23931.png" alt="Twitter" />
+          <h2>Twitter</h2>
+        </a>
+      </article>
+      <article>
+        <a href="https://dev.to/">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands-2/460/84_Dev_logo_logos-512.png"
+            alt="Dev.to"
+          />
+          <h2>Dev.to</h2>
+        </a>
+      </article>
+      <article>
+        <a href="https://github.com/">
+          <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github" />
+          <h2>Github</h2>
+        </a>
+      </article>
+      <article>
+        <a href="https://www.youtube.com">
+          <img
+            src="https://icons-for-free.com/iconfiles/png/512/video+youtube+icon-1320192294490006733.png"
+            alt="Youtube"
+          />
+          <h2>Youtube</h2>
+        </a>
+      </article>
+    </main>
+  </body>
+</html>
